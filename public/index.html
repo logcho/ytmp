@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <title>YouTube converter</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <h1>YouTube converter</h1>
+    <p class="intro">Save a link as audio or video.</p>
+    <form id="convert-form">
+      <label for="video-url">YouTube link</label>
+      <div class="url-field">
+        <input id="video-url" type="url" placeholder="https://www.youtube.com/watch?v=…" required autocomplete="off" autofocus>
+        <button type="button" id="paste" class="paste-button">Paste</button>
+      </div>
+      <div class="options-row">
+        <div>
+          <span class="field-label" id="format-label">Format</span>
+          <div class="format-options" role="group" aria-labelledby="format-label">
+            <button class="format selected" type="button" data-format="mp3" aria-pressed="true">MP3 <small>Audio</small></button>
+            <button class="format" type="button" data-format="mp4" aria-pressed="false">MP4 <small>Video</small></button>
+          </div>
+        </div>
+        <div class="quality">
+          <label for="quality">Quality</label>
+          <select id="quality">
+            <option value="320">320 kbps</option>
+            <option value="192">192 kbps</option>
+            <option value="128">128 kbps</option>
+          </select>
+        </div>
+      </div>
+      <button class="convert-button" id="convert-button" type="submit"><span>Convert to MP3</span></button>
+    </form>
+    <div id="result" class="result" aria-live="polite" hidden></div>
+  </main>
+  <div id="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
