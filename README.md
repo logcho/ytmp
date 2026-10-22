@@ -4,6 +4,8 @@ A responsive YouTube-to-MP3/MP4 converter with a Node.js backend, yt-dlp, and FF
 
 ## macOS app
 
+Download the Apple silicon app ZIP from [Releases](https://github.com/logcho/ytmp/releases), unzip it, and move the app into your Applications folder. Install the required local tools with `brew install python@3.13 ffmpeg` if they are not already present.
+
 Open **YouTube Converter.app** in your personal Applications folder. You can drag it to the Dock for quick access. It opens its own window, starts a private local server on an available port, and stops that server and active conversions when you quit. Downloads use the standard macOS Save dialog.
 
 To rebuild after changing the code:
