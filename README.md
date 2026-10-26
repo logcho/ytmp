@@ -1,6 +1,6 @@
-# Offbeat
+# YouTube Converter
 
-A responsive YouTube-to-MP3/MP4 converter with a Node.js backend, yt-dlp, and FFmpeg. No Node dependencies or API keys are needed.
+A personal desktop app for converting YouTube links to MP3 audio or MP4 video. Built with a native macOS window, a Node.js backend, yt-dlp, and FFmpeg. No API keys are needed.
 
 ## macOS app
 
